@@ -82,27 +82,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "b4f74ec3512380d58ef9bd4e5a55048605d2202f9a21fdeb1b031e9fdbd828eaa4ff5ed217a497dec2752ca401f7af896f4ec9ed4b737f804538be7bc2ab0166"
-
-  # ==> Configuration for :invitable
-  # The period the generated invitation token is valid, after
-  # this period, the invited resource won't be able to accept the invitation.
-  # When invite_for is 0 (the default), the invitation won't expire.
-  # config.invite_for = 2.weeks
-  
-  # Number of invitations users can send.
-  # If invitation_limit is nil, users can send unlimited invitations.
-  # If invitation_limit is 0, users can't send invitations.
-  # If invitation_limit n > 0, users can send n invitations.
-  # Default: nil
-  # config.invitation_limit = 5
-  
-  # The key to be used to check existing users when sending an invitation
-  # config.invite_key = :email
-  
-  # Flag that force a record to be valid before being actually invited 
-  # Default: false
-  # config.validate_on_invite = true
+  # config.pepper = "732028fcccb3e6dcd56d174fd078cbf225d67ed6ee2a0840de81c8277530d7bbad563def22e5d5858cd624d933ba484bb0d3f279e55d0053bbf5339c1014804f"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -218,7 +198,7 @@ Devise.setup do |config|
   # config.navigational_formats = ["*/*", :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
-  config.sign_out_via = Rails.env.test? ? :get : :delete
+  config.sign_out_via = :delete
 
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting

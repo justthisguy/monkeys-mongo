@@ -53,3 +53,4 @@ gem "rspec-rails", ">= 2.9.0.rc2", :group => [:development, :test]
 gem "mongoid-rspec", ">= 1.4.4", :group => :test
 gem "factory_girl_rails", ">= 3.2.0", :group => [:development, :test]
 gem "email_spec", ">= 1.2.1", :group => :test
+gem "omniauth"
