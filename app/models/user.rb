@@ -36,4 +36,11 @@ class User
 
   ## Token authenticatable
   # field :authentication_token, :type => String
+  
+  field :name,      :type => String
+  field :github,    :type => String
+  field :twitter,   :type => String
+  field :irc,       :type => String
+  field :vcard,     :type => String
+  field :linkedin,  :type => String
 end
